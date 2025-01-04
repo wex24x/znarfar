@@ -10,7 +10,7 @@ body {
     top: 0;
     width: 100%;
     background: rgba(69, 74, 75, 0.7);
-    padding: 15px 30%;
+    padding: 20px;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -20,6 +20,8 @@ body {
     list-style: none;
     display: flex;
     gap: 40px;
+    margin-left: 50%;
+    
   }
  
   
@@ -160,49 +162,41 @@ body {
       bottom: 0;
       width: 100%;
     }
-    @media screen and (min-width: 500px){
-      .navbar {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background: rgba(69, 74, 75, 0.7);
-        padding: 15px 30%;
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-      }
-      
+    /*  pra responsive styles */
+    @media (max-width: 700px) {
       .navbar ul {
-        list-style: none;
-        display: flex;
-        gap: 40px;
+        flex-direction: inherit;
+        gap: 10px;
+        margin-right: 30%;
       }
-     
-      
+
       .navbar a {
-        color: rgb(173, 211, 7);
-        text-decoration: none;
-        font-size: 20px;
-        position: relative;
-        
+        font-size: 16px;
       }
-      
-      .navbar a:hover {
-        color: #39f07f;
+
+      .text {
+        margin: 20px 10px;
       }
-      
-      .navbar a::after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #34d0db;
-        transition: width 0.3s ease;
+
+      video {
+        max-width: 100%;
       }
-      
-      .navbar a:hover::after {
-        width: 100%;
+
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .imgcontact {
+        width: 50px;
+        height: 50px;
+      }
+
+      .imgcontact:hover {
+        width: 60px;
+        height: 60px;
       }
     }
